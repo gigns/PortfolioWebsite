@@ -1,0 +1,73 @@
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .subscribe-us-area .subscribe .subscribe-title,
+    .site-main .subscribe-us-area .subscribe .subscribe-title p, h4,
+    .site-main .services-area,
+    .site-main .subscribe-us-area .subscribe
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main > .services-area .services{
+        width: 13rem;
+    }
+
+    .site-main .portfolio-area .portfolio-title {
+        margin-left: 5px;
+    }
+
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .portfolio-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+
+    .site-main .portfolio-area .portfolio-title h1::after{
+        display: none;
+    }
+
+    .site-main .portfolio-area .portfolio-title {
+        padding: 0;
+        letter-spacing: normal;
+    }
+
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .site-main .titulo-principal span {
+        font-size: 80px;
+    }
+
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+
+}

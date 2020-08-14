@@ -1,0 +1,285 @@
+/* Import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* CSS Variables */
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* Start Navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 0rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 3rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* End Navigation */
+
+/* Banner Area */
+
+.bg-black {
+    background-color: black;
+}
+
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#gabiati {
+    color: #333;
+    font: normal 500 6em var(--roboto);
+    padding: 100px 0;
+}
+
+/* Animação Titulo */
+
+h1 span {
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+	animation-delay: 0s
+}
+
+h1 span:nth-child(2) {
+	animation-delay: 0.2s
+}
+
+h1 span:nth-child(3) {
+	animation-delay: 0.4s
+}
+
+h1 span:nth-child(4) {
+	animation-delay: 0.6s
+}
+
+h1 span:nth-child(5) {
+	animation-delay: 0.8s
+}
+
+h1 span:nth-child(6) {
+	animation-delay: 1s
+}
+
+h1 span:nth-child(7) {
+	animation-delay: 1.2s
+}
+
+@keyframes animate {
+    0%,80% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 40px #fff,
+										 0 0 80px #fff,
+										 0 0 120px #fff,
+										 0 0 160px #fff;
+    }
+}
+
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 25%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 15vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img {
+    padding: 7rem 0;
+    width: 26rem;
+    height: 38rem;
+    padding-left: 20px;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+
+.site-main .about-area {
+	padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title {
+	margin-top: 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+	display: block;
+	font: normal bold 49px/ 60px var(--roboto);
+	letter-spacing: 19px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+	padding: 0rem;
+}
+
+.site-main .about-area .about-image > img {
+	height: 500px;
+}
+
+/* End About Area */
+
+/* Services Area */
+.site-main .services-area {
+	padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+	padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+	font-size: 40px;
+}
+
+.site-main > .services-area .services {
+	background: rgba(248, 252, 253, 0.973);
+	padding: 2rem 0;
+	width: 16rem;
+	margin: 5rem .5rem;
+	transition: boxshadow .7s ease;
+}
+
+.site-main > .services-area .services:hover {
+	box-shadow: var(--box-shadow);
+}
+
+/* End Services Area */
+
+/* Portfolio Area */
+
+.site-main .portfolio-area .container-fluid {
+	padding: 2rem 5rem;
+}
+
+.site-main .portfolio-area .portfolio-title {
+	font: normal 40px var(--roboto);
+	color: white;
+	padding: 4rem 5rem;
+	letter-spacing: 10px;
+}
+
+.site-main .portfolio-area .portfolio-title h1::after{
+	content: " ";
+	height: 5px;
+	width: 35vw;
+	background: whitesmoke;
+	display: inline-block;
+	margin-left: 5%;
+	transform: translateY(-10px);
+}
+
+.site-main .portfolio-area h4 {
+	color: #cccccc;
+}
+
+/* End Portfolio Area */
+
+/* Footer Area */ 
+
+footer.footer-area{
+	padding: 5rem 0;
+	background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+	font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+	font-size:22px;
+	padding: 2rem;
+	color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+	color: var(--primary-color);
+}
+
+/* End Footer Area */
+
+/* Contact Area */
+
+.site-main .contact-area .contact-title h2 span:nth-child(1) {
+	font: normal bold 32px var(--roboto);
+	letter-spacing: 2px;
+}
+
+.site-main .contact-area .contact-title h2 span:nth-child(2) {
+	font-size: 48px;
+	letter-spacing: 7px;
+	padding-left: 10px;
+	color: var(--primary-color2);
+}
+
+.form-alt {
+	padding-bottom: 20px;
+}
+
+.site-main form {
+	box-shadow: var(--box-shadow);
+	margin-bottom: 20px;
+}
+
+/* End Contact Area */
+
+/* Animar ao Scroll */
+.anime-left {
+	opacity: 0;
+	transform: translate3d(-1500px,0,0);
+	transition: 1.2s;
+}
+
+.anime-start {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
