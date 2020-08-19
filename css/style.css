@@ -17,7 +17,7 @@
     padding: 1rem 3rem;
 }
 
-.header_area .main-menu .nav-item .nav-link {
+.header_area .main-menu .nav-item {
     font: normal 500 15px/2px var(--roboto);
     text-transform: uppercase;
     padding: 1.7rem;
@@ -185,7 +185,7 @@ h1 span:nth-child(7) {
 	background: rgba(248, 252, 253, 0.973);
 	padding: 2rem 0;
 	width: 16rem;
-	margin: 5rem .5rem;
+	margin: 2rem .5rem;
 	transition: boxshadow .7s ease;
 }
 

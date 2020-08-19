@@ -46,6 +46,10 @@
         letter-spacing: normal;
     }
 
+    .site-main .titulo-principal h1 span {
+        font-size: 50px;
+    }
+
 }
 
 
